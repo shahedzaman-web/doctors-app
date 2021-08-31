@@ -21,7 +21,10 @@ import Settings from './App/Screens/Settings';
 import Notifications from './App/Screens/Notifications';
 import ThemeMode from './App/Screens/ThemeMode';
 import Languages from './App/Screens/Languages';
-import Description from './App/Screens/Description';
+import DescriptionClinics from './App/Screens/DescriptionClinics';
+import DescriptionDoctor from './App/Screens/DescriptionDoctor';
+import BookAnAppointment from './App/Screens/BookAnAppointment';
+import Checkout from './App/Screens/Checkout';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -35,7 +38,10 @@ export default function App() {
     // <ThemeMode/>
     // <Languages />
     // <Home/>
-    <Description/>
+    // <BookAnAppointment/>
+    <Checkout />
+    // <DescriptionClinics/>
+    // <DescriptionDoctor/>
   //   <NavigationContainer>
   //   <Stack.Navigator  screenOptions={{
   //     headerShown: false,

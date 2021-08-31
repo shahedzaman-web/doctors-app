@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 16,
         shadowOffset: { width: 2, height: 2 },
+        elevation: 5,
     },btnText:{
         color: '#0170b2',
     },btnSkip:{
