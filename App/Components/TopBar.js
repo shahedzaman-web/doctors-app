@@ -4,10 +4,10 @@ import { Entypo,Feather} from '@expo/vector-icons';
 
 const TopBar = ({title}) => {
     return (
-        <View style={styles.row}>
-        <Entypo name="list" size={24} color="black" />
-            <Text style={styles.titleText}>{title}</Text>
-            <Feather name="bell" size={24} color="black" />
+        <View style={title=== 'Account'? styles.rowColored :styles.row}>
+        <Entypo name="list" size={24} color={title=== 'Account'? "white":"black"} />
+            <Text style={title=== 'Account'? styles.titleTextWhite :styles.titleText}>{title}</Text>
+            <Feather name="bell" size={24} color={title=== 'Account'? "white":"black"} />
         </View>
     )
 }
@@ -16,14 +16,26 @@ export default TopBar
 
 const styles = StyleSheet.create({
     row:{
-        marginVertical:10,
-        marginHorizontal:10,
+        paddingVertical:10,
+        paddingHorizontal:10,
         flexDirection:'row',
         justifyContent:'space-between',
         alignItems:'center',
-    },titleText:{
+    },rowColored:{
+        paddingVertical:10,
+        paddingHorizontal:10,
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        backgroundColor: '#0170b2'
+    },
+    titleText:{
         fontSize:16,
         fontWeight:'bold',
         color:"#0170b2",
+    },titleTextWhite:{
+        fontSize:16,
+        fontWeight:'bold',
+        color:"white",
     }
 })
