@@ -25,6 +25,8 @@ import DescriptionClinics from './App/Screens/DescriptionClinics';
 import DescriptionDoctor from './App/Screens/DescriptionDoctor';
 import BookAnAppointment from './App/Screens/BookAnAppointment';
 import Checkout from './App/Screens/Checkout';
+import Confirmation from './App/Screens/Confirmation';
+import Specialities from './App/Screens/Specialities';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -39,7 +41,9 @@ export default function App() {
     // <Languages />
     // <Home/>
     // <BookAnAppointment/>
-    <Checkout />
+    // <Checkout />
+    // <Confirmation/>
+    <Specialities/>
     // <DescriptionClinics/>
     // <DescriptionDoctor/>
   //   <NavigationContainer>

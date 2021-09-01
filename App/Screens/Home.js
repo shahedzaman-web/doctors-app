@@ -10,8 +10,7 @@ import {
   ScrollView
 } from "react-native";
 import {
-  Entypo,
-  Feather,
+
   AntDesign,
   FontAwesome,
   FontAwesome5,
